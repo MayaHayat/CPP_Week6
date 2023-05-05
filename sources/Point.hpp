@@ -23,10 +23,11 @@ class Point{
 
         Point moveTowards(const Point origin, const Point destination, double distance);
 
-        void print();
+        string print();
 
-        string to_string() ;
+        // string to_string() ;
 
+        //bool operator==(Point& other);
         
 };
 

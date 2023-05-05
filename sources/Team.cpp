@@ -12,8 +12,8 @@ void Team :: add(Character* newChr){
 }
 
 void  Team :: attack(Team* other){
-    cout << " team is attacking " << endl;
-
+    other ->members.clear();
+    other ->numberMembers = 0;
 }
 
 int Team :: stillAlive(){

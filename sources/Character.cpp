@@ -42,8 +42,18 @@ void Character :: setLocation(Point &other){
 }
 
 string Character :: print(){
-    string alive = to_string(this ->alivePoints) + " ";
-    string s = this -> name +  " is standing at " + (this ->location.to_string()) + " and has " + alive + " lives left.";
     //cout << this ->name << " is standing at " << this ->location.print() << " and has " << this ->alivePoints << " lives left."<< endl;
+    string alive = to_string(this ->alivePoints) + " ";
+    string s = this -> name +  " is standing at " + (this ->location.print()) + " and has " + alive + " lives left.";
     return s;
+
+}
+
+int Character :: getAlivePoints()const{
+    return this ->alivePoints;
+}
+
+void Character :: setAlivePoints(int toAdd){
+    this ->alivePoints += toAdd;
+    cout << this ->alivePoints << endl;
 }

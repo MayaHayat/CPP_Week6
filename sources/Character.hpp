@@ -22,13 +22,9 @@ class Character{
         Character(string name, Point location);
 
 
-        int getAlivePoints(){
-            return this ->alivePoints;
-        }
+        int getAlivePoints()const;
 
-        void setAlivePoints(int toAdd){
-            this ->alivePoints += toAdd;
-        }
+        void setAlivePoints(int toAdd);
 
         bool isAlive();
 
@@ -41,6 +37,8 @@ class Character{
         Point getLocation();
 
         void setLocation(Point &other);
+
+        // string to_string();
 
         string print();
 

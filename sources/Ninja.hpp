@@ -20,6 +20,8 @@ class Ninja : public Character{
 
         void slash(Character* other);
 
+        int getSpeed() const;
+
 };
 
 

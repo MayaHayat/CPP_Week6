@@ -25,11 +25,14 @@ Point Point :: moveTowards(const Point origin, const Point destination, double d
     return Point(0,0);
 }
 
-void Point :: print(){
-    cout <<"( " << this->x_c << " , " << this ->y_c << " )" << endl;
+string Point :: print(){
+    string s = "(" + to_string(this ->x_c) + " , " + to_string(this ->y_c) + " )";
+    return s;    
 }
 
-string to_string() {
-    return "Printing point";
-    // return "( " +  to_string(this->x_c) +  " , " + to_string(this ->y_c) + " )"
-}
+// bool Point :: operator==(Point& other){
+//     if (this ->x_c == other.getX() && this ->y_c == other.getY()){
+//         return true;
+//     }
+//     return false;
+// }

@@ -33,8 +33,8 @@ int main() {
 
     // Team b(tom); should throw tom is already in team a
 
-     Team team_B(sushi);
-     team_B.add(new TrainedNinja("Hikari", Point(12,81)));
+   Team team_B(sushi);
+    team_B.add(new TrainedNinja("Hikari", Point(12,81)));
 
 
      while(team_A.stillAlive() > 0 && team_B.stillAlive() > 0){
