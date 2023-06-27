@@ -13,21 +13,21 @@ class Point{
         double y_c;
 
     public:
-        Point(double x_c, double y_c);
+        Point(){}
+
+        Point(double x_c, double y_c) :x_c(x_c), y_c(y_c){}
+
 
         double getX() const;
 
         double getY() const;
 
-        double distance(const Point other);
+        double distance(Point other) const;
 
-        Point moveTowards(const Point origin, const Point destination, double distance);
+        static Point moveTowards(Point origin, Point destination, double distance);
 
         string print();
 
-        // string to_string() ;
-
-        //bool operator==(Point& other);
         
 };
 

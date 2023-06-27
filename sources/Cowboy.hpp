@@ -12,16 +12,18 @@ class Cowboy : public Character{
     private:
        int numBullets; 
 
-       int bulletsInGun;
-
     public:
-        Cowboy(string name, Point location);
+        Cowboy(string name, Point location) : Character(name, location, 110), numBullets(6){
+            this->setType("Cowboy");
+        }
         
         void shoot(Character* other);
 
         bool hasboolets(); // checks if there are bullets left in the gun
 
         void reload(); // adds 6 bullets to gun
+
+        int getNumBullets();
 
         
 
